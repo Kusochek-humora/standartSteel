@@ -1,3 +1,11 @@
+$('.modal-call').magnificPopup({
+    type: 'inline',
+    // closeBtnInside: true
+});
+$('#close').on('click', function () {
+    $.magnificPopup.close();
+})
+
 $('.assortment__slider').slick({
     infinite: true,
     slidesToShow: 4,

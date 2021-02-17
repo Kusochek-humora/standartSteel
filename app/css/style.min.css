@@ -85,6 +85,10 @@ li {
   line-height: 22px;
 }
 
+input {
+  outline-style: none;
+}
+
 .btn {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-31.63%, #57D4FE), color-stop(197.96%, #5770FE));
   background: -o-linear-gradient(top, #57D4FE -31.63%, #5770FE 197.96%);
@@ -604,7 +608,7 @@ header .header-top, header .header-bot {
 
 footer,
 .footer {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   min-height: 471px;
   background: #1B1B1B;
 }
@@ -687,4 +691,95 @@ footer__bot-item,
   line-height: 37px;
   text-align: right;
   color: #B8B8B8;
+}
+
+.write {
+  position: relative;
+  width: 595px;
+  height: 457px;
+  border-top: 6px solid #57A7FE;
+  background-color: #fff;
+  margin: auto;
+  text-align: center;
+  color: #1F1F1F;
+}
+
+.write .mfp-close {
+  display: none;
+}
+
+.write .close {
+  position: absolute;
+  position: absolute;
+  top: -3.9%;
+  left: 104%;
+}
+
+.write-title {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.write-subtitle {
+  margin-top: 17px;
+  margin-bottom: 31px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.write .ipt::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #7C7C7C;
+}
+
+.write .ipt::-moz-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #7C7C7C;
+}
+
+.write .ipt:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #7C7C7C;
+}
+
+.write .ipt::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #7C7C7C;
+}
+
+.write .ipt::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #7C7C7C;
+}
+
+.write .ipt:nth-child(1) {
+  margin-bottom: 17px;
+}
+
+.write .ipt {
+  padding-top: 5px;
+  padding-left: 22px;
+  width: 492px;
+  height: 56px;
+  margin: 0 auto;
+  display: block;
+  background: #FFFFFF;
+  border: 1px solid #D3D3D3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.write .btn {
+  margin-top: 35px;
+  width: 207.79px;
+  height: 53px;
 }
