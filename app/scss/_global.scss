@@ -11,6 +11,7 @@ html {
 html,
 body {
 	height: 100%;
+	overflow-x: hidden;
 }
 
 section,
@@ -34,7 +35,14 @@ a {
 	text-decoration: none;
 	color: #111
 }
-
+.bg-title{
+	font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 73px;
+        text-align: center;
+        color: white;
+}
 ul,
 li {
 	margin: 0;

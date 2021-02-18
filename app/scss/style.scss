@@ -2,6 +2,120 @@
 @import "global";
 @import "fonts";
 
+
+.index-bg {
+    background-image: url(../images/bg1.png);
+    max-width: 100%;
+
+    height: 883px;
+}
+
+.bg-price {
+    background-image: url(../images/price-bg.png);
+    max-width: 100%;
+    height: 387px;
+    margin-bottom: 150px;
+
+    &__inner {
+        height: 387px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+.price {
+    margin-bottom: 150px;
+
+    &-top {
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 44px;
+            color: #1F1F1F;
+            margin-bottom: 23px;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #181818;
+            margin-bottom: 35px;
+        }
+    }
+
+    &-btn {
+      
+        border: 1px solid #5790FE;
+        background-color: transparent;
+        border-radius: 30px;
+        width: 145.9px;
+        height: 41px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        outline-style: none;
+        color: #5790FE;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+      height: 40px;
+        color: #1F1F1F;
+        margin-bottom: 35px;
+      
+    }
+
+    &-logo {
+        margin-bottom: 20px;
+    }
+
+    &__inner {
+        @include flex;
+    }
+
+    &__inner-item {
+        padding-top: 29px;
+        padding-left: 20px;
+        padding-bottom: 32px;
+        width: 222px;
+        min-height: 243px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        svg {
+            height: 80px;
+        }
+    }
+
+    &__inner-item:hover {
+        background: linear-gradient(180deg, #57D3FE 0%, #5778FE 100%);
+
+        .price-title {
+            color: white;
+        }
+        .l2 {
+            fill: none;
+            stroke: white;
+        }
+        .price-btn {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        path {
+            fill: white;
+        }
+    }
+}
+
+
 header .header {
     &-top {
         background: #F1F1F1;
@@ -154,10 +268,8 @@ header .header {
 
 .bg-box {
     margin-bottom: 153px;
-    background-image: url(../images/bg1.png);
-    max-width: 100%;
 
-    height: 883px;
+
 
     &__inner {
         height: 883px;
@@ -180,12 +292,7 @@ header .header {
 
     &__title {
         margin-bottom: 46px;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 60px;
-        line-height: 73px;
-        text-align: center;
-        color: white;
+
     }
 }
 
@@ -440,12 +547,12 @@ header .header {
 
 footer,
 .footer {
-    
+
     min-height: 450px;
     background: #1B1B1B;
 
     &__inst {
-     
+        margin-top: 30px;
         display: flex;
         align-items: center;
 
@@ -456,7 +563,7 @@ footer,
 
     &__top {
         @include flex;
-       margin-bottom: 45px;
+        margin-bottom: 45px;
 
         &-item {
             margin-top: 45px;
@@ -501,15 +608,17 @@ footer,
 }
 
 .write {
-    .mfp-close{
+    .mfp-close {
         display: none;
     }
-    .close{
+
+    .close {
         position: absolute;
         position: absolute;
         top: -3.9%;
         left: 104%
     }
+
     position: relative;
 
     width: 595px;

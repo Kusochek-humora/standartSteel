@@ -14,6 +14,7 @@ html {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 section,
@@ -35,6 +36,15 @@ a {
   display: inline-block;
   text-decoration: none;
   color: #111;
+}
+
+.bg-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+  color: white;
 }
 
 ul,
@@ -118,6 +128,130 @@ input {
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/montserat.woff") format("woff"), url("../fonts/montserat.woff2") format("woff2"), url("../fonts/montserat.ttf") format("ttf"), url("../fonts/montserat.eot") format("eot");
+}
+
+.index-bg {
+  background-image: url(../images/bg1.png);
+  max-width: 100%;
+  height: 883px;
+}
+
+.bg-price {
+  background-image: url(../images/price-bg.png);
+  max-width: 100%;
+  height: 387px;
+  margin-bottom: 150px;
+}
+
+.bg-price__inner {
+  height: 387px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.price {
+  margin-bottom: 150px;
+}
+
+.price-top__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1F1F1F;
+  margin-bottom: 23px;
+}
+
+.price-top__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #181818;
+  margin-bottom: 35px;
+}
+
+.price-btn {
+  border: 1px solid #5790FE;
+  background-color: transparent;
+  border-radius: 30px;
+  width: 145.9px;
+  height: 41px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  outline-style: none;
+  color: #5790FE;
+}
+
+.price-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  height: 40px;
+  color: #1F1F1F;
+  margin-bottom: 35px;
+}
+
+.price-logo {
+  margin-bottom: 20px;
+}
+
+.price__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price__inner-item {
+  padding-top: 29px;
+  padding-left: 20px;
+  padding-bottom: 32px;
+  width: 222px;
+  min-height: 243px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.price__inner-item svg {
+  height: 80px;
+}
+
+.price__inner-item:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#57D3FE), to(#5778FE));
+  background: -o-linear-gradient(top, #57D3FE 0%, #5778FE 100%);
+  background: linear-gradient(180deg, #57D3FE 0%, #5778FE 100%);
+}
+
+.price__inner-item:hover .price-title {
+  color: white;
+}
+
+.price__inner-item:hover .l2 {
+  fill: none;
+  stroke: white;
+}
+
+.price__inner-item:hover .price-btn {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.price__inner-item:hover path {
+  fill: white;
 }
 
 header .header-top {
@@ -293,9 +427,6 @@ header .header-top, header .header-bot {
 
 .bg-box {
   margin-bottom: 153px;
-  background-image: url(../images/bg1.png);
-  max-width: 100%;
-  height: 883px;
 }
 
 .bg-box__inner {
@@ -327,12 +458,6 @@ header .header-top, header .header-bot {
 
 .bg-box__title {
   margin-bottom: 46px;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 73px;
-  text-align: center;
-  color: white;
 }
 
 .assortment {
@@ -614,6 +739,7 @@ footer,
 
 footer__inst,
 .footer__inst {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
