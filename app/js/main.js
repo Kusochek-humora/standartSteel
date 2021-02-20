@@ -1,6 +1,16 @@
 $('.catalog-sidebar__item').on("click", function () {
-    $(this).find(' #catalog-sidebar__options').slideToggle("fast", "linear", function () {});
-    $(this).find(' .catalog-sidebar__title').toggleClass('active-bg')
+    $(this).find('.catalog-sidebar__options').slideToggle("fast", "linear", function () {});
+
+    $(this).find('.catalog-sidebar__title').toggleClass('active-bg')
+    $(this).find('.catalog-sidebar__title>svg').toggleClass('accordeon-item', 1000, 'linear')
+
+    $(this).find('catalog-sidebar__options').on('click', function () {
+        $('.catalog-sidebar__options').off()
+
+        $('.catalog-sidebar__title').off()
+        $('.catalog-sidebar__title>svg').off()
+    })
+
 })
 
 
