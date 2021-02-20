@@ -23,26 +23,53 @@ header {
 	width: 100%;
 }
 
-body {
+.cover {
+	background-color: #57AFFE;
+	width: 514px;
+	height: 412px;
+}
 
+body {
+	display: none;
 	font-weight: 400;
 	font-size: 12px;
 	font-family: 'Montserrat';
 }
 
+li {
+	cursor: pointer;
+}
+
 a {
+	cursor: pointer;
+	outline-style: none;
 	display: inline-block;
 	text-decoration: none;
-	color: #111
+	color: #111;
 }
-.bg-title{
+.active-bg{
+	background: #57A7FE !important;
+	color: white;
+}
+.sec-title {
+
 	font-style: normal;
-        font-weight: 800;
-        font-size: 60px;
-        line-height: 73px;
-        text-align: center;
-        color: white;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+
+	color: #1F1F1F;
 }
+
+.bg-title {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 73px;
+	text-align: center;
+	color: white;
+}
+
 ul,
 li {
 	margin: 0;

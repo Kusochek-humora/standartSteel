@@ -26,16 +26,42 @@ header {
   width: 100%;
 }
 
+.cover {
+  background-color: #57AFFE;
+  width: 514px;
+  height: 412px;
+}
+
 body {
+  display: none;
   font-weight: 400;
   font-size: 12px;
   font-family: 'Montserrat';
 }
 
+li {
+  cursor: pointer;
+}
+
 a {
+  cursor: pointer;
+  outline-style: none;
   display: inline-block;
   text-decoration: none;
   color: #111;
+}
+
+.active-bg {
+  background: #57A7FE !important;
+  color: white;
+}
+
+.sec-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1F1F1F;
 }
 
 .bg-title {
@@ -136,14 +162,19 @@ input {
   height: 883px;
 }
 
-.bg-price {
-  background-image: url(../images/price-bg.png);
+.bg-about,
+.bg-catalog,
+.bg-price,
+.bg-contact {
   max-width: 100%;
   height: 387px;
   margin-bottom: 150px;
 }
 
-.bg-price__inner {
+.bg-about__inner,
+.bg-catalog__inner,
+.bg-price__inner,
+.bg-contact__inner {
   height: 387px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -155,6 +186,196 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+}
+
+.bg-contact {
+  background-image: url(../images/con-bg.png);
+}
+
+.bg-price {
+  background-image: url(../images/price-bg.png);
+}
+
+.bg-about {
+  background-image: url(../images/about.png);
+}
+
+.bg-catalog {
+  background-image: url(../images/catalog-bg.png);
+}
+
+.catalog {
+  margin-top: 120px;
+}
+
+.catalog-sidebar {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-sidebar__item {
+  width: 306px;
+  margin-bottom: 20px;
+}
+
+.catalog-sidebar ul {
+  width: 306px;
+  display: none;
+  border-bottom: 1px solid #E7E4E4;
+  border-right: 1px solid #E7E4E4;
+  border-left: 1px solid #E7E4E4;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.catalog-sidebar ul li {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-sidebar__title {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 306px;
+  height: 61px;
+  background: #F5F5F5;
+  border: 1px solid #E7E4E4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.catalog-sidebar__title:hover {
+  background: #57A7FE;
+  color: white;
+}
+
+.about-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.about-inner__item:first-child {
+  width: 566px;
+  height: 404px;
+}
+
+.about-inner__title {
+  margin-bottom: 40px;
+}
+
+.about-inner__logo {
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.about-inner__logo:hover {
+  -webkit-transform: translate(-20px, -20px);
+      -ms-transform: translate(-20px, -20px);
+          transform: translate(-20px, -20px);
+}
+
+.about-inner__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+  color: #3F3F3F;
+}
+
+.gallery {
+  margin-bottom: 127px;
+}
+
+.gallery__inner {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery__inner-item {
+  position: relative;
+}
+
+.gallery-info__pos {
+  position: absolute;
+  top: 295px;
+  left: 44px;
+}
+
+.gallery-text {
+  font-weight: 600;
+  color: white;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.gallery-subtext {
+  color: white;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.gallery .grid-item {
+  grid-column-start: span 2;
+  float: left;
+}
+
+.gallery .grid-item img {
+  width: 789px;
+  height: 388px;
+}
+
+.gallery-title {
+  margin-bottom: 51px;
+}
+
+.contact-top__title {
+  margin-bottom: 40px;
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.contact ul .box-links {
+  white-space: nowrap;
+}
+
+.contact ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact ul li img {
+  margin-right: 14px;
 }
 
 .price {

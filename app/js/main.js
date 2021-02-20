@@ -1,3 +1,16 @@
+$('.catalog-sidebar__item').on("click", function () {
+    $(this).find(' #catalog-sidebar__options').slideToggle("fast", "linear", function () {});
+    $(this).find(' .catalog-sidebar__title').toggleClass('active-bg')
+})
+
+
+
+
+
+
+
+
+
 $('.modal-call').magnificPopup({
     type: 'inline',
     // closeBtnInside: true
@@ -22,19 +35,19 @@ $('.feedback__slider').slick({
     nextArrow: $('.nextW')
 });
 // Initialize and add the map
-ymaps.ready(init);
 
-function init() {
-    var map = new ymaps.Map('map', {
-        center: [43.282733, 76.915830],
-        zoom: 13.5,
-        controls: ['zoomControl'],
-        behaviors: ['drag']
-    });
-    var placemark = new ymaps.Placemark([43.282733, 76.915830], {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/sprite.png',
+
+
+$(document).ready(function () {
+    var body = $("body");
+    body.fadeIn(600);
+    $(document).on("click", "a:not([href^='#']):not([href^='tel']):not([href^='mailto'])", function (e) {
+        e.preventDefault();
+        $("body").fadeOut(600);
+        var self = this;
+        setTimeout(function () {
+            window.location.href = $(self).attr("href");
+        }, 600);
     });
 
-    map.geoObjects.add(placemark);
-}
+});
