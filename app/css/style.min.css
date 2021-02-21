@@ -1778,6 +1778,28 @@ footer__bot-item,
   }
 }
 
+@media (max-width: 700px) {
+  .write-title {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .write-subtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .write {
+    width: 300px;
+    height: 300px;
+  }
+  .write .btn {
+    margin-top: 15px;
+  }
+  .write .ipt {
+    height: 30px;
+    width: 280px;
+  }
+}
+
 @media (max-width: 550px) {
   .about-inner {
     margin-bottom: 30px;
