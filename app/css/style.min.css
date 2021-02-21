@@ -1788,7 +1788,7 @@ footer__bot-item,
     margin-bottom: 10px;
   }
   .write {
-    overflow: hidden;
+    width: 300px;
     height: 300px;
   }
   .write .btn {
