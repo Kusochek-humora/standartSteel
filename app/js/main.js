@@ -1,26 +1,19 @@
-$('.catalog-sidebar__item').on("click", function () {
-    $(this).find('.catalog-sidebar__options').slideToggle("fast", "linear", function () {});
-
-    $(this).find('.catalog-sidebar__title').toggleClass('active-bg')
-    $(this).find('.catalog-sidebar__title>svg').toggleClass('accordeon-item', 1000, 'linear')
-
-    $(this).find('catalog-sidebar__options').on('click', function () {
-        $('.catalog-sidebar__options').off()
-
-        $('.catalog-sidebar__title').off()
-        $('.catalog-sidebar__title>svg').off()
-    })
-
+$('.catalog-sidebar__title').on("click", function () {
+    $(this).next().slideToggle("fast", "linear", function () {});
+    $(this).toggleClass('active-bg')
+    $(this, 'svg').toggleClass('accordeon-item', 1000, 'linear')
 })
-
-
-
-
-
-
-
-
-
+$('.catalog-pag__btn').on('click', function () {
+    $(this).toggleClass('pag-btn__active').fadeIn('slow')
+})
+$('.burger-menu').on('click', function () {
+    $('.burger-menu').toggleClass('burger-activ')
+    $('.burger-list').fadeToggle().toggleClass('burger-active__menu')
+})
+$('.close').on('click', function () {
+    $('.burger-menu').removeClass('burger-activ')
+    $('.burger-list').fadeToggle().removeClass('burger-active__menu')
+})
 $('.modal-call').magnificPopup({
     type: 'inline',
     // closeBtnInside: true
@@ -28,21 +21,50 @@ $('.modal-call').magnificPopup({
 $('#close').on('click', function () {
     $.magnificPopup.close();
 })
-
 $('.assortment__slider').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    initialSlideL: 1,
     prevArrow: $('.prev'),
-    nextArrow: $('.next')
-});
+    nextArrow: $('.next'),
+    responsive: [{
+            breakpoint: 1235,
+            settings: {
+                slidesToShow: 3
 
+            }
+        }, {
+            breakpoint: 835,
+            settings: {
+                slidesToShow: 2
+
+            }
+        },
+        {
+            breakpoint: 570,
+            settings: {
+                slidesToShow: 1
+
+            }
+        },
+
+
+    ]
+});
 $('.feedback__slider').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow: $('.prevW'),
-    nextArrow: $('.nextW')
+    nextArrow: $('.nextW'),
+    responsive: [{
+        breakpoint: 1100,
+        settings: {
+            slidesToShow: 1,
+         
+        }
+    }, ]
 });
 // Initialize and add the map
 

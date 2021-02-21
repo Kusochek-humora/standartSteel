@@ -51,6 +51,53 @@
     margin-top: 120px;
     margin-bottom: 150px;
 
+    &-pag {
+        margin-top: 34px;
+        @include flex;
+
+        &__item {
+            @include flex;
+            align-items: center;
+
+        }
+
+        &__arrow:hover {
+            background: #57A7FE;
+
+            path {
+                fill: white;
+                fill-opacity: 1;
+            }
+        }
+
+        &__arrow {
+            transition: 0.3s all;
+            outline-style: none;
+            text-align: center;
+            margin-left: 10px;
+            width: 90px;
+            height: 38px;
+            background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+            border: 1px solid #EDEAEA;
+            box-sizing: border-box;
+        }
+
+        &__btn {
+            margin-right: 15px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            transition: 0.3s all;
+            color: rgba(0, 0, 0, 0.5);
+            outline-style: none;
+            width: 38px;
+            height: 38px;
+            border: 1px solid #EDEAEA;
+            box-sizing: border-box;
+        }
+    }
+
     &-inner {
         @include flex;
 
@@ -175,13 +222,13 @@
         &__item {
             width: 306px;
             margin-bottom: 20px;
-
+            min-height: 61px;
         }
 
         .catalog-sidebar__options {
             width: 306px;
             display: none;
-
+            max-height: 100%;
             border-bottom: 1px solid #E7E4E4;
             border-right: 1px solid #E7E4E4;
 
@@ -205,6 +252,8 @@
         }
 
         &__title {
+
+
             @include flex;
             align-items: center;
 
@@ -242,14 +291,14 @@
     }
 }
 
-.about {
+.about {  
     &-inner {
         @include flex;
         margin-bottom: 120px;
 
         &__item:first-child {
             width: 566px;
-            height: 404px;
+            min-height: 404px;
         }
 
         &__title {
@@ -457,7 +506,7 @@
 header .header {
     &-top {
         background: #F1F1F1;
-        height: 60px;
+        min-height: 60px;
 
         &__items {
             @include flex;
@@ -539,7 +588,6 @@ header .header {
             border-radius: 12.5px;
             height: 90px;
 
-
             .ipt {
                 border: 1px solid #d9dfe5;
                 position: absolute;
@@ -555,7 +603,6 @@ header .header {
             }
 
             .search {
-
                 border: 0;
                 background-color: transparent;
                 outline-style: none;
@@ -573,8 +620,6 @@ header .header {
                 path {
                     fill: white;
                 }
-
-
             }
 
             .search:hover {
@@ -621,6 +666,7 @@ header .header {
     &__subtitle {
         color: white;
         margin-bottom: 56px;
+        text-align: center;
     }
 
     .btn {
@@ -657,16 +703,13 @@ header .header {
     }
 
     &__slider {
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
-
-
-
+box-shadow:0, 0 ,10px rgba(0, 0, 0, 0.1);
 
         &-item {
             border-right: 1px solid #EAEAEA;
             transition: 0.3s all;
-            max-width: 100%;
+            width: 300px;
             height: 360px;
             padding: 38px 11px 20px 25px;
         }
@@ -675,7 +718,7 @@ header .header {
 
         &-title {
             font-weight: bold;
-
+            font-size: 16px;
             margin-bottom: 20px;
         }
 
@@ -812,7 +855,7 @@ header .header {
 }
 
 .feedback {
-    height: 450px;
+    min-height: 450px;
 
     background: linear-gradient(270.35deg, #57ADFE 11.7%, #5770FE 72.2%);
 

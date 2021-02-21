@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Standard Steel </title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap" rel="stylesheet">
@@ -15,10 +15,54 @@
     <div class="wrapper">
         <header class="header">
             <div class="container-fluid">
+                <div class="burger-list">
+                    <div class="close">
+                        <div class="close-item"></div>
+                        <div class="close-item"></div>
+                    </div>
+                    <form class="header-bot__search">
+                        <input id="ipt" class="ipt" type="text" placeholder="Введите текст..." required>
+                        <button class="search" type="submit"><svg class="loupe" width="18" height="18"
+                                viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.7801 16.7196L12.6614 11.6009C13.6529 10.3762 14.2498 8.81991 14.2498 7.12494C14.2498 3.19648 11.0534 0 7.12491 0C3.19645 0 0 3.19644 0 7.12491C0 11.0534 3.19648 14.2498 7.12494 14.2498C8.81991 14.2498 10.3762 13.6529 11.6009 12.6614L16.7196 17.7801C16.8658 17.9263 17.0578 17.9998 17.2498 17.9998C17.4419 17.9998 17.6339 17.9263 17.7801 17.7801C18.0733 17.4868 18.0733 17.0128 17.7801 16.7196ZM7.12494 12.7499C4.02296 12.7499 1.5 10.2269 1.5 7.12491C1.5 4.02293 4.02296 1.49996 7.12494 1.49996C10.2269 1.49996 12.7499 4.02293 12.7499 7.12491C12.7499 10.2269 10.2269 12.7499 7.12494 12.7499Z"
+                                    fill="#262626" />
+                            </svg>
+                        </button>
+                    </form>
+                    <nav class="burger-nav">
+
+                        <ul class="font-style">
+
+                            <li><a href="about_us.html">О компании</a></li>
+                            <li><a href="catalog.html">Каталог продукции</a></li>
+                            <li><a href="price-list.html">Прайс лист</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+
+                    </nav>
+                    <div class="burger-btn__popup "><button class="modal-call btn" href="#write">Написать
+                            нам</button>
+                    </div>
+
+                </div>
                 <div class="header-top">
                     <ul class="header-top__items font-style">
+
                         <li><img src="./images/mail.png" alt=""><a href="#">info@standartsteel.kz</a></li>
                         <li><img src="./images/instagram.png" alt=""><a href="#">standart_steel</a></li>
+                        <li id="number-adap"><img src="./images/phone.png" alt="phone"><a href="tel:+7 727 268 04 07">+7
+                                727 268 04
+                                07</a>
+                        </li>
+                        <li id="number-adap"><img src="./images/phone.png" alt="phone"><a href="tel:+7 727 268 04 07">+7
+                                727 268 04
+                                07</a>
+                        </li>
+                        <li id="number-adap"><img src="./images/phone.png" alt="phone"><a href="tel:+7 727 268 04 07">+7
+                                727 268 04
+                                07</a>
+                        </li>
                     </ul>
                     <ul class="header-top__items font-style">
                         <li><img src="./images/phone.png" alt="phone"><a href="tel:+7 727 268 04 07">+7 727 268 04
@@ -43,7 +87,7 @@
                         </ul>
                     </nav>
                     <div class="header-bot__widget">
-                        <form class="header-bot__search">
+                        <form class="header-bot__search adap-none">
                             <input id="ipt" class="ipt" type="text" placeholder="Введите текст..." required>
                             <button class="search" type="submit"><svg class="loupe" width="18" height="18"
                                     viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +100,11 @@
                         <div class="header-bot__btn "><button class="modal-call btn" href="#write">Написать нам</button>
                         </div>
                     </div>
-
+                    <div class="burger-menu">
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                        <div class="burger-item"></div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -69,15 +117,31 @@
                     </div>
                 </div>
             </section>
-
             <section class="catalog">
                 <div class="container-catalog">
                     <div class="catalog-inner">
                         <aside class="catalog-sidebar">
-
                             <div class="catalog-sidebar__item">
                                 <div class="catalog-sidebar__title">
                                     <span>Металочерепица</span> <svg width="14" height="7" viewBox="0 0 14 7"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.38418 6.85231L13.8417 0.857335C14.0531 0.660916 14.0528 0.34291 13.8406 0.146821C13.6284 -0.0491167 13.2847 -0.0486104 13.0731 0.147833L6.99997 5.78597L0.926841 0.14763C0.7152 -0.0487882 0.371737 -0.0492945 0.159551 0.146618C0.0531845 0.244915 -1.63346e-08 0.373693 -2.19637e-08 0.50247C-2.75783e-08 0.630918 0.0528278 0.759188 0.158456 0.857309L6.6158 6.85231C6.71746 6.94691 6.85582 7 6.99997 7C7.14413 7 7.28232 6.94676 7.38418 6.85231Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                                <ul class="catalog-sidebar__options">
+                                    <li><span>Опция1</span></li>
+                                    <li><span>Опция2</span></li>
+                                    <li><span>Опция3</span></li>
+                                    <li><span>Опция4</span></li>
+                                    <li><span>Опция5</span></li>
+                                </ul>
+                            </div>
+                            <div class="catalog-sidebar__item">
+                                <div class="catalog-sidebar__title">
+                                    <span>Металлосайндинг</span> <svg width="14" height="7" viewBox="0 0 14 7"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M7.38418 6.85231L13.8417 0.857335C14.0531 0.660916 14.0528 0.34291 13.8406 0.146821C13.6284 -0.0491167 13.2847 -0.0486104 13.0731 0.147833L6.99997 5.78597L0.926841 0.14763C0.7152 -0.0487882 0.371737 -0.0492945 0.159551 0.146618C0.0531845 0.244915 -1.63346e-08 0.373693 -2.19637e-08 0.50247C-2.75783e-08 0.630918 0.0528278 0.759188 0.158456 0.857309L6.6158 6.85231C6.71746 6.94691 6.85582 7 6.99997 7C7.14413 7 7.28232 6.94676 7.38418 6.85231Z"
@@ -92,24 +156,6 @@
                                     <li><span>Опция5</span></li>
                                 </ul>
                             </div>
-
-                            <div class="catalog-sidebar__item">
-                                <div class="catalog-sidebar__title">
-                                    <span>Металлосайндинг</span> <svg width="14" height="7" viewBox="0 0 14 7"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7.38418 6.85231L13.8417 0.857335C14.0531 0.660916 14.0528 0.34291 13.8406 0.146821C13.6284 -0.0491167 13.2847 -0.0486104 13.0731 0.147833L6.99997 5.78597L0.926841 0.14763C0.7152 -0.0487882 0.371737 -0.0492945 0.159551 0.146618C0.0531845 0.244915 -1.63346e-08 0.373693 -2.19637e-08 0.50247C-2.75783e-08 0.630918 0.0528278 0.759188 0.158456 0.857309L6.6158 6.85231C6.71746 6.94691 6.85582 7 6.99997 7C7.14413 7 7.28232 6.94676 7.38418 6.85231Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <ul id="catalog-sidebar__options">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
-                                </ul>
-                            </div>
                             <div class="catalog-sidebar__item">
                                 <div class="catalog-sidebar__title">
                                     <span>Профнастил</span> <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
@@ -119,12 +165,12 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <ul id="catalog-sidebar__options">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
+                                <ul class="catalog-sidebar__options">
+                                    <li><span>Опция1</span></li>
+                                    <li><span>Опция2</span></li>
+                                    <li><span>Опция3</span></li>
+                                    <li><span>Опция4</span></li>
+                                    <li><span>Опция5</span></li>
                                 </ul>
                             </div>
                             <div class="catalog-sidebar__item">
@@ -136,12 +182,12 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <ul id="catalog-sidebar__options">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
+                                <ul class="catalog-sidebar__options">
+                                    <li><span>Опция1</span></li>
+                                    <li><span>Опция2</span></li>
+                                    <li><span>Опция3</span></li>
+                                    <li><span>Опция4</span></li>
+                                    <li><span>Опция5</span></li>
                                 </ul>
                             </div>
                             <div class="catalog-sidebar__item">
@@ -153,12 +199,12 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <ul id="catalog-sidebar__options">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
+                                <ul class="catalog-sidebar__options">
+                                    <li><span>Опция1</span></li>
+                                    <li><span>Опция2</span></li>
+                                    <li><span>Опция3</span></li>
+                                    <li><span>Опция4</span></li>
+                                    <li><span>Опция5</span></li>
                                 </ul>
                             </div>
                         </aside>
@@ -261,12 +307,41 @@
                                 </div>
 
                             </div>
+                            <div class="catalog-pag">
+                                <div class="catalog-pag__item">
+                                    <button class="catalog-pag__btn">1</button>
+                                    <button class="catalog-pag__btn">2</button>
+                                    <button class="catalog-pag__btn">3</button>
+                                </div>
+                                <div class="catalog-pag__item">
+                                    <button class="catalog-pag__arrow prev">
+                                        <svg width="27" height="14" viewBox="0 0 27 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="black"
+                                                d="M0.30934 6.28109C0.309656 6.28078 0.309919 6.28043 0.310289 6.28012L5.82124 0.998872C6.2341 0.603235 6.90187 0.604707 7.31283 1.00232C7.72374 1.39989 7.72216 2.04293 7.3093 2.43862L3.60925 5.98437H25.9453C26.5278 5.98437 27 6.43907 27 7C27 7.56093 26.5278 8.01562 25.9453 8.01562H3.6093L7.30925 11.5614C7.72211 11.9571 7.72369 12.6001 7.31278 12.9977C6.90182 13.3953 6.23399 13.3967 5.82119 13.0011L0.310236 7.71987C0.309919 7.71957 0.309656 7.71921 0.309286 7.71891C-0.103783 7.3219 -0.102463 6.67677 0.30934 6.28109Z"
+                                                fill-opacity="0.5" />
+                                        </svg>
+
+                                    </button>
+                                    <button class="catalog-pag__arrow next">
+                                        <svg width="27" height="14" viewBox="0 0 27 14"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="black"   fill-opacity="0.5"
+                                                d="M26.6907 6.28109C26.6903 6.28078 26.6901 6.28043 26.6897 6.28012L21.1788 0.998872C20.7659 0.603235 20.0981 0.604707 19.6872 1.00232C19.2763 1.39989 19.2778 2.04293 19.6907 2.43862L23.3908 5.98437H1.05469C0.472184 5.98437 0 6.43907 0 7C0 7.56093 0.472184 8.01562 1.05469 8.01562H23.3907L19.6908 11.5614C19.2779 11.9571 19.2763 12.6001 19.6872 12.9977C20.0982 13.3953 20.766 13.3967 21.1788 13.0011L26.6898 7.71987C26.6901 7.71957 26.6903 7.71921 26.6907 7.71891C27.1038 7.3219 27.1025 6.67677 26.6907 6.28109Z"
+                                               />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+
 
                     </div>
 
                 </div>
             </section>
+
         </div>
 
     </div>
