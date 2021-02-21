@@ -318,20 +318,23 @@
 
 @media (max-width:700px) {
     .write-title {
-      margin-top: 15px;
+        margin-top: 15px;
         font-size: 18px;
     }
-    .write-subtitle{
+
+    .write-subtitle {
         font-size: 15px;
         margin-bottom: 10px;
     }
 
     .write {
-        width: 300px;
+        overflow: hidden;
         height: 300px;
-.btn{
-    margin-top: 15px;
-}
+
+        .btn {
+            margin-top: 15px;
+        }
+
         .ipt {
             height: 30px;
             width: 280px;
