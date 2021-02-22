@@ -137,7 +137,8 @@ li {
   line-height: 22px;
 }
 
-.slick-list, .draggable {
+.slick-list,
+.draggable {
   padding: 0 !important;
 }
 
@@ -188,7 +189,7 @@ input {
   width: 375px;
   padding-left: 15px;
   background-color: #F1F1F1;
-  height: 700px;
+  min-height: 100%;
 }
 
 .burger-list li {

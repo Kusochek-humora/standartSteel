@@ -135,9 +135,12 @@ li {
 	line-height: 22px;
 
 }
-.slick-list, .draggable{
+
+.slick-list,
+.draggable {
 	padding: 0 !important;
 }
+
 input {
 	outline-style: none;
 }
@@ -172,8 +175,9 @@ input {
 }
 
 .burger-list {
+
 	z-index: 200;
-overflow: hidden;
+	overflow: hidden;
 	display: none;
 	position: fixed;
 	padding-top: 25px;
@@ -181,7 +185,7 @@ overflow: hidden;
 	padding-left: 15px;
 	background-color: #F1F1F1;
 	;
-	height: 700px;
+	min-height: 100%;
 
 	li {
 		margin-bottom: 20px;
@@ -306,22 +310,26 @@ overflow: hidden;
 		transform: rotate(-45deg) translate(13px);
 	}
 }
-.close{
+
+.close {
 	float: right;
 	padding-right: 15px;
 }
-.close:hover{
+
+.close:hover {
 	.close-item {
 		background-color: #57BAFE;
 	}
 }
-.close-item{
+
+.close-item {
 	transition: 0.3s all;
 	margin-bottom: 4px;
 	width: 35px;
 	height: 5px;
 	background-color: #B8B8B8;
 }
+
 .close-item:nth-child(1) {
 	transform: rotate(45deg) translate(6px);
 }
