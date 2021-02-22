@@ -10,6 +10,8 @@
     height: 883px;
 }
 
+
+
 .bg-about,
 .bg-catalog,
 .bg-price,
@@ -291,7 +293,7 @@
     }
 }
 
-.about {  
+.about {
     &-inner {
         @include flex;
         margin-bottom: 120px;
@@ -650,7 +652,7 @@ header .header {
 }
 
 .bg-box {
-    margin-bottom: 153px;
+    margin-bottom: 100px;
 
 
 
@@ -704,7 +706,7 @@ header .header {
 
     &__slider {
 
-box-shadow:0, 0 ,10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1);
 
         &-item {
             border-right: 1px solid #EAEAEA;
