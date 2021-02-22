@@ -1741,6 +1741,10 @@ footer__bot-item,
 }
 
 @media (max-width: 670px) {
+  .burger-list {
+    width: 500px;
+    max-width: 100%;
+  }
   .about-inner__text p {
     width: 400px;
   }
@@ -1896,35 +1900,5 @@ footer__bot-item,
   }
   .feedback__slider-text br {
     display: none;
-  }
-}
-
-@media (max-width: 414px) {
-  .burger-list {
-    width: 414px;
-  }
-}
-
-@media (max-width: 411px) {
-  .burger-list {
-    width: 411px;
-  }
-}
-
-@media (max-width: 375px) {
-  .burger-list {
-    width: 375px;
-  }
-}
-
-@media (max-width: 360px) {
-  .burger-list {
-    width: 360px;
-  }
-}
-
-@media (max-width: 320px) {
-  .burger-list {
-    width: 320px;
   }
 }
