@@ -39,10 +39,6 @@ body {
   font-family: 'Montserrat';
 }
 
-li {
-  cursor: pointer;
-}
-
 a {
   cursor: pointer;
   outline-style: none;
@@ -1510,6 +1506,30 @@ footer__bot-item,
 }
 
 @media only screen and (max-width: 1475px) {
+  .burger-numbers ul > li > a {
+    font-size: 20px;
+  }
+  .burger-numbers__items {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .burger-numbers__items li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .burger-numbers__items li img {
+    margin-right: 10px;
+  }
   .header-bot__nav {
     display: none !important;
   }
@@ -1743,29 +1763,8 @@ footer__bot-item,
     font-size: 36px;
     line-height: 48px;
   }
-  .font-style {
-    line-height: 30px;
-  }
   .header-top {
-    display: inline !important;
-    padding: 0 !important;
-  }
-  #number-adap {
-    display: block;
-  }
-  .header-top__items {
-    padding-left: 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 200px !important;
-  }
-  .header-top__items li {
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: start !important;
-    margin-bottom: 15px;
+    display: none !important;
   }
   .header-top__items:nth-child(2) {
     display: none;
