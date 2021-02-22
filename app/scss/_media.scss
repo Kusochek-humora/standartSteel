@@ -373,7 +373,12 @@
 
 @media (max-width:500px) {
 
-
+    .bg-about,
+    .bg-catalog,
+    .bg-price,
+    .bg-contact{
+        margin-bottom: 100px;
+    }
     .catalog-sidebar {
 
         transform: translateY(0);

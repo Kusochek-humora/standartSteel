@@ -1812,6 +1812,12 @@ footer__bot-item,
 }
 
 @media (max-width: 500px) {
+  .bg-about,
+  .bg-catalog,
+  .bg-price,
+  .bg-contact {
+    margin-bottom: 100px;
+  }
   .catalog-sidebar {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
