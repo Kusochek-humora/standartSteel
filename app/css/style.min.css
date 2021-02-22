@@ -185,7 +185,7 @@ input {
   overflow: hidden;
   display: none;
   position: fixed;
-  padding-top: 25px;
+  padding-top: 34px;
   width: 375px;
   padding-left: 15px;
   background-color: #F1F1F1;
@@ -233,9 +233,9 @@ input {
 }
 
 .burger-item {
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
   margin-bottom: 4px;
   width: 35px;
   height: 5px;
@@ -264,7 +264,7 @@ input {
 
 .close {
   float: right;
-  padding-right: 15px;
+  padding-right: 6.5px;
 }
 
 .close:hover .close-item {
