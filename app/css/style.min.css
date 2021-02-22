@@ -283,15 +283,15 @@ input {
 }
 
 .close-item:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate(6px);
-      -ms-transform: rotate(45deg) translate(6px);
-          transform: rotate(45deg) translate(6px);
+  -webkit-transform: rotate(45deg) translate(6.5px);
+      -ms-transform: rotate(45deg) translate(6.5px);
+          transform: rotate(45deg) translate(6.5px);
 }
 
 .close-item:nth-child(2) {
-  -webkit-transform: rotate(-45deg) translate(6px);
-      -ms-transform: rotate(-45deg) translate(6px);
-          transform: rotate(-45deg) translate(6px);
+  -webkit-transform: rotate(-45deg) translate(6.5px);
+      -ms-transform: rotate(-45deg) translate(6.5px);
+          transform: rotate(-45deg) translate(6.5px);
 }
 
 @font-face {
