@@ -1898,3 +1898,33 @@ footer__bot-item,
     display: none;
   }
 }
+
+@media (max-width: 414px) {
+  .burger-list {
+    width: 414px;
+  }
+}
+
+@media (max-width: 411px) {
+  .burger-list {
+    width: 411px;
+  }
+}
+
+@media (max-width: 375px) {
+  .burger-list {
+    width: 375px;
+  }
+}
+
+@media (max-width: 360px) {
+  .burger-list {
+    width: 360px;
+  }
+}
+
+@media (max-width: 320px) {
+  .burger-list {
+    width: 320px;
+  }
+}

@@ -14,15 +14,15 @@
         li {
 
             img {
-                
+
                 margin-right: 10px;
             }
 
-          
-         display: flex;
-         align-items: center;
-         justify-content: start !important;
-         
+
+            display: flex;
+            align-items: center;
+            justify-content: start !important;
+
         }
 
 
@@ -302,7 +302,7 @@
         line-height: 48px;
     }
 
-   
+
 
     // .header-top {
     //     display: inline !important;
@@ -376,9 +376,10 @@
     .bg-about,
     .bg-catalog,
     .bg-price,
-    .bg-contact{
+    .bg-contact {
         margin-bottom: 60px;
     }
+
     .catalog-sidebar {
 
         transform: translateY(0);
@@ -485,6 +486,36 @@
 
 }
 
+@media (max-width:414px) {
+    .burger-list {
+        width: 414px;
+    }
+}
+
+@media (max-width:411px) {
+    .burger-list {
+        width: 411px;
+    }
+}
+
+@media (max-width:375px) {
+    .burger-list {
+        width: 375px;
+    }
+}
+
+@media (max-width:360px) {
+    .burger-list {
+        width: 360px;
+    }
+}
+
+
+@media (max-width:320px) {
+    .burger-list {
+        width: 320px;
+    }
+}
 
 // .header-top {
 //     display: inline !important;
