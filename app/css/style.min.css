@@ -181,12 +181,13 @@ input {
 }
 
 .burger-list {
+  width: 430px;
+  max-width: 100%;
   z-index: 200;
   overflow: hidden;
   display: none;
   position: fixed;
   padding-top: 34px;
-  width: 375px;
   padding-left: 15px;
   background-color: #F1F1F1;
   min-height: 100%;
@@ -1741,10 +1742,6 @@ footer__bot-item,
 }
 
 @media (max-width: 670px) {
-  .burger-list {
-    width: 500px;
-    max-width: 100%;
-  }
   .about-inner__text p {
     width: 400px;
   }
