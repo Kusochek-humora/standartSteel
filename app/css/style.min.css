@@ -1451,23 +1451,14 @@ footer__bot,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-footer__bot-item,
-.footer__bot-item {
   font-size: 18px;
   line-height: 37px;
   text-align: right;
   color: #B8B8B8;
 }
 
-footer__bot-item .font-style,
-.footer__bot-item .font-style {
-  color: #B8B8B8;
-}
-
-footer__bot-item a,
-.footer__bot-item a {
+footer__bot a,
+.footer__bot a {
   color: #B8B8B8;
 }
 
