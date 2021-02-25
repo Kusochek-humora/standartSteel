@@ -22,6 +22,8 @@ $('#close').on('click', function () {
     $.magnificPopup.close();
 })
 $('.assortment__slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -53,6 +55,8 @@ $('.assortment__slider').slick({
     ]
 });
 $('.feedback__slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -66,8 +70,28 @@ $('.feedback__slider').slick({
         }
     }, ]
 });
-// Initialize and add the map
 
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: '.gallery__inner-item',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+			}
+		}
+	});
+});
+// Initialize and add the map
+$('.tel-mask').mask('+0(000)000-00-00', {placeholder: "+7(777)777-77-77"});
 
 
 $(document).ready(function () {
