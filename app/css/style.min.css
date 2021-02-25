@@ -1405,6 +1405,15 @@ footer__top-item,
   color: white;
 }
 
+footer__top-item ul > li,
+.footer__top-item ul > li {
+  font-size: 18px;
+  line-height: 36px;
+  color: #B8B8B8;
+  font-weight: 400;
+  line-height: 36px;
+}
+
 footer__top-item ul > li > a,
 footer__top-item span,
 .footer__top-item ul > li > a,
@@ -1449,6 +1458,16 @@ footer__bot-item,
   font-size: 18px;
   line-height: 37px;
   text-align: right;
+  color: #B8B8B8;
+}
+
+footer__bot-item .font-style,
+.footer__bot-item .font-style {
+  color: #B8B8B8;
+}
+
+footer__bot-item a,
+.footer__bot-item a {
   color: #B8B8B8;
 }
 
