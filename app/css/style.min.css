@@ -511,7 +511,8 @@ input {
   max-width: 310px;
 }
 
-.catalog-list__filter::after {
+.catalog-list__filter form::after {
+  pointer-events: none;
   top: 16px;
   right: 10px;
   position: absolute;

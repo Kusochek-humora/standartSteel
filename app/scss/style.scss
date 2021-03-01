@@ -181,16 +181,20 @@
             position: relative;
             max-width: 310px;
 
-            &::after {
-                top: 16px;
-                right: 10px;
-                position: absolute;
-                display: block;
-                width: 9px;
-                height: 7px;
-                content: '';
-                background-image: url(../images/select-item.png);
+            form {
+                &::after {
+                    pointer-events:none ;
+                    top: 16px;
+                    right: 10px;
+                    position: absolute;
+                    display: block;
+                    width: 9px;
+                    height: 7px;
+                    content: '';
+                    background-image: url(../images/select-item.png);
+                }
             }
+
         }
 
         &__info {
