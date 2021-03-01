@@ -529,7 +529,8 @@ input {
           appearance: none;
   padding-left: 10px;
   outline-style: none;
-  width: 100%;
+  width: 310px;
+  max-width: 100%;
   height: 42px;
   background: #F5F5F5;
   border: 1px solid #E7E4E4;
@@ -1121,8 +1122,8 @@ header .header-top, header .header-bot {
 }
 
 .assortment__slider {
-  -webkit-box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.4);
 }
 
 .assortment__slider-item {
